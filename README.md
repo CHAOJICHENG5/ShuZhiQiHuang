@@ -287,11 +287,9 @@ While ShuZhiQiHuang represents a significant advancement in integrated medical A
 We acknowledge the inspiration and foundation provided by the following works:
 
 - **[TCMBench](https://github.com/ywjawmw/TCMBench)**: The first comprehensive benchmark for evaluating Large Language Models in Traditional Chinese Medicine, providing standardized evaluation protocols and datasets
-- **HuatuoGPT**: Pioneering work in Chinese medical AI systems
-- **LLaMA-Factory**: Efficient fine-tuning framework for large language models
-- **Qwen**: Advanced language model architecture
-- **Traditional Chinese Medicine Classics**: Huangdi Neijing, Shanghan Lun, and other foundational TCM texts
-- **Modern Medical Literature**: Contemporary medical research and clinical guidelines
+- **[LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory)**: Efficient fine-tuning framework for large language models
+- **[Qwen](https://github.com/QwenLM/Qwen)**: Advanced language model architecture
+- **[Langchain-Chatchat](https://github.com/chatchat-space/Langchain-Chatchat)**: This project focuses on creating an offline knowledge base Q&A solution that leverages LangChain's principles for local data processing. 
 
 Without these foundational works and the dedication of medical professionals and researchers worldwide, the development of ShuZhiQiHuang would not have been possible.
 

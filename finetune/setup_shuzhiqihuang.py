@@ -39,8 +39,6 @@ extra_require = {
     "gptq": ["optimum>=1.16.0", "auto-gptq>=0.5.0"],
     "awq": ["autoawq"],
     "qwen": ["tiktoken", "transformers_stream_generator"],
-    "medical": ["medicalai", "tcm-tools"],  # 中医药专用工具
-    "quality": ["ruff", "black"],
 }
 
 

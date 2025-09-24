@@ -3,9 +3,7 @@
 <div align="center">
 
 [![GitHub stars](https://img.shields.io/github/stars/CHAOJICHENG5/shuzhiqihuang-web.svg?style=social&label=Star)](https://github.com/CHAOJICHENG5/shuzhiqihuang-web)
-[![GitHub forks](https://img.shields.io/github/forks/CHAOJICHENG5/shuzhiqihuang-web.svg?style=social&label=Fork)](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/fork)
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 
 </div>
 
@@ -327,8 +325,5 @@ Our intelligent medical platform supports multiple access channels including web
 
 ---
 
-## License
-
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
 
 **Disclaimer**: This software is for research and educational purposes. It should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of qualified healthcare providers with any questions regarding medical conditions.

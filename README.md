@@ -304,16 +304,6 @@ We acknowledge the inspiration and foundation provided by the following works:
 
 Without these foundational works and the dedication of medical professionals and researchers worldwide, the development of ShuZhi QiHuang would not have been possible.
 
-## Citation
-
-```bibtex
-@article{shuzhiqihuang-2024,
-  title={ShuZhi QiHuang: Towards Integrating Traditional Chinese Medicine and Western Medicine with AI},
-  author={[Your Name] and [Co-authors]},
-  journal={arXiv preprint arXiv:2024.xxxxx},
-  year={2024}
-}
-```
 
 ## Contact
 

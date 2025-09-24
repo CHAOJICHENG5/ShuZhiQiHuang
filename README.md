@@ -1,10 +1,18 @@
 # ShuZhiQiHuang: A Knowledge Graph-Driven Platform for Integrating Traditional Chinese and Modern Medicine
 
+<div align="center">
+
+[![GitHub stars](https://img.shields.io/github/stars/CHAOJICHENG5/shuzhiqihuang-web.svg?style=social&label=Star)](https://github.com/CHAOJICHENG5/shuzhiqihuang-web)
+[![GitHub forks](https://img.shields.io/github/forks/CHAOJICHENG5/shuzhiqihuang-web.svg?style=social&label=Fork)](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/fork)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/)
+
+</div>
+
 ## ✨ Latest News
-- [12/2024]: 🎉🎉🎉 Released **ShuZhiQiHuang** integrated TCM-Western Medicine intelligent platform with comprehensive evaluation results!
-- [11/2024]: Achieved significant performance improvements on TCMBench, surpassing ChatGPT-4 and mainstream TCM models.
-- [10/2024]: Launched dual-pathway training approach combining biomedical and TCM classical corpora with knowledge graph fusion.
-- [09/2024]: Released RAG-enhanced Q&A system and educational tools for TCM knowledge inheritance.
+- [03/28/2025]: 🚀 **ShuZhiQiHuang R1** released with enhanced reasoning capabilities and expanded knowledge base coverage!
+- [11/28/2024]: 🎉 **ShuZhiQiHuang 2.0** launched with improved TCM-Western medicine integration and advanced RAG system!
+- [01/19/2024]: 🌟 **ShuZhiQiHuang 1.0** officially released - the first comprehensive TCM-Western medicine integrated AI platform!
 
 ## ⚡ Introduction
 
@@ -12,7 +20,7 @@
 
 ### Key Innovations
 
-🔬 **Dual-pathway Training Methodology**: Integrates biomedical corpora with classical TCM texts through a sophisticated two-stage training process (CPT + SFT)
+🔬 **Dual-pathway Training Methodology**: Integrates biomedical corpora with classical TCM texts through a sophisticated two-stage training process
 
 📊 **Superior Performance**: Achieves remarkable improvements on TCMBench evaluations, significantly outperforming ChatGPT-4 and existing TCM-focused models
 
@@ -181,6 +189,31 @@ Our comprehensive evaluation demonstrates ShuZhiQiHuang's exceptional performanc
 
 🎯 **Consistent Excellence**: Unlike other models that show uneven performance across different metrics, ShuZhiQiHuang maintains consistently high scores across all evaluation categories, demonstrating robust and reliable medical knowledge integration.
 
+## 📊 Model Evaluation
+
+### Evaluation Framework
+
+Our comprehensive evaluation is conducted using the [TCMBench](https://github.com/ywjawmw/TCMBench) framework, the first comprehensive benchmark for evaluating Large Language Models in Traditional Chinese Medicine. TCMBench provides a standardized evaluation protocol that assesses LLM performance across different types of TCM-related questions.
+
+### TCMBench Dataset Overview
+
+The evaluation dataset is based on the Traditional Chinese Medicine Licensing Examination (TCMLE), containing **5,473 representative practice questions** across three categories:
+
+| Question Type | Count | Sub-questions | Description |
+|---------------|-------|---------------|-------------|
+| **A1/A2** | 1,600 | - | Single-sentence and case summary best-choice questions |
+| **A3** | 198 | 642 | Case group questions with patient-centered scenarios |
+| **B1** | 1,481 | 3,231 | Standard compatibility questions with shared options |
+
+### Evaluation Methodology
+
+- **Standardized Prompts**: Consistent evaluation prompts for each question type
+- **Automated Scoring**: Objective accuracy measurement across all categories
+- **Comprehensive Coverage**: Assessment spans theoretical knowledge and practical clinical skills
+- **Fair Comparison**: All models evaluated under identical conditions using the same benchmark
+
+The TCMBench evaluation framework ensures reliable and reproducible assessment of TCM knowledge integration capabilities across different language models.
+
 ### Expert Evaluation Results
 
 Professional evaluation by licensed TCM practitioners and Western medicine doctors:
@@ -250,37 +283,6 @@ bash run_pt_shuzhiqihuang.sh
 bash merge_lora_shuzhiqihuang.sh
 ```
 
-### Supported Fine-tuning Methods
-
-#### LoRA (Low-Rank Adaptation)
-- Low memory usage
-- Fast training speed
-- Suitable for quick experiments
-
-#### QLoRA (Quantized LoRA)
-- Even lower memory usage
-- Supports larger models
-- Suitable for resource-constrained environments
-
-#### Full Fine-tuning
-- Complete parameter updates
-- Best performance
-- Requires more computational resources
-
-### Training Configuration
-
-#### DeepSpeed Configuration
-The `deepspeed_config.json` contains distributed training configurations supporting:
-- ZeRO optimizer state sharding
-- Gradient checkpointing
-- Mixed precision training
-
-#### Key Parameters
-- `learning_rate`: Learning rate (recommended: 5e-5 for LoRA, 1e-5 for full fine-tuning)
-- `num_train_epochs`: Number of training epochs
-- `per_device_train_batch_size`: Batch size per device
-- `gradient_accumulation_steps`: Gradient accumulation steps
-
 ## 🤖 Limitations
 
 While ShuZhiQiHuang represents a significant advancement in integrated medical AI, several limitations must be acknowledged:
@@ -291,50 +293,11 @@ While ShuZhiQiHuang represents a significant advancement in integrated medical A
 - **Continuous Learning**: Medical knowledge evolves rapidly; the model requires regular updates to maintain current medical standards.
 - **Bias Considerations**: Despite extensive training, potential biases from training data or cultural perspectives may influence outputs.
 
-## 🏥 Platform Applications & Impact
-
-### Primary Applications
-1. **Scientific Research Advancement**: Accelerating research in integrated medicine through AI-powered analysis and knowledge discovery
-2. **Clinical Training & Education**: Comprehensive training platform for medical professionals in TCM-Western medicine integration
-3. **Knowledge Preservation & Inheritance**: Digitizing and preserving traditional Chinese medical knowledge for future generations
-4. **Intelligent Clinical Support**: Providing evidence-based recommendations combining both medical paradigms
-5. **Cross-cultural Medical Bridge**: Facilitating communication and understanding between Eastern and Western medical practices
-
-### Target Impact Areas
-- **Research Institutions**: Advancing integrated medicine research with AI-powered tools
-- **Medical Schools**: Enhanced curriculum delivery for integrated medicine education
-- **Healthcare Systems**: Improved patient care through comprehensive medical perspectives
-- **TCM Practitioners**: Modern tools for traditional knowledge application
-- **Global Health**: Promoting worldwide adoption of integrated medical approaches
-
-### Platform Vision
-ShuZhiQiHuang serves as an intelligent platform dedicated to:
-- **Driving Scientific Innovation** in integrated medicine research
-- **Enhancing Clinical Training** effectiveness and accessibility  
-- **Preserving Cultural Heritage** of traditional Chinese medicine
-- **Promoting Integration** between Eastern and Western medical systems
-- **Advancing Global Health** through comprehensive medical AI solutions
-
-## 📊 Technical Architecture
-
-### System Components
-1. **ShuZhiQiHuang LLM**: Core language model specialized for medical applications
-2. **RAG System**: Retrieval-Augmented Generation for knowledge-enhanced responses
-3. **Knowledge Base**: Comprehensive medical knowledge covering TCM and Western medicine
-4. **Web Interface**: User-friendly interface for medical consultation
-5. **API Layer**: RESTful API for system integration
-6. **Fine-tuning Framework**: Tools for model customization and improvement
-
-### Integration Capabilities
-- **Electronic Health Records (EHR)**: Compatible with major EHR systems
-- **Medical Imaging**: Support for medical image analysis (future release)
-- **Clinical Guidelines**: Integration with evidence-based clinical guidelines
-- **Drug Databases**: Comprehensive pharmaceutical information including both Western drugs and TCM formulas
-
 ## Acknowledgement
 
 We acknowledge the inspiration and foundation provided by the following works:
 
+- **[TCMBench](https://github.com/ywjawmw/TCMBench)**: The first comprehensive benchmark for evaluating Large Language Models in Traditional Chinese Medicine, providing standardized evaluation protocols and datasets
 - **HuatuoGPT**: Pioneering work in Chinese medical AI systems
 - **LLaMA-Factory**: Efficient fine-tuning framework for large language models
 - **Qwen**: Advanced language model architecture

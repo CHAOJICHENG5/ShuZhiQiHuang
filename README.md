@@ -16,11 +16,11 @@
 
 ## ⚡ Introduction
 
-**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
+**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**.Our model employs a **two-stage** approach that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
 ### Key Innovations
 
-🔬 **Dual-pathway Training Methodology**: Integrates biomedical corpora with classical TCM texts through a sophisticated two-stage training process
+🔬 **two-stage Training Methodology**: Integrates biomedical corpora with classical TCM texts through a  two-stage training process
 
 📊 **Superior Performance**: Achieves remarkable improvements on TCMBench evaluations, significantly outperforming ChatGPT-4 and existing TCM-focused models
 
@@ -51,7 +51,7 @@
 
 ### Overview
 
-ShuZhiQiHuang employs a sophisticated **dual-pathway training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
+ShuZhiQiHuang employs a sophisticated **two-stage training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
 
 ### CPT (Continued Pre-training)
 
@@ -79,40 +79,40 @@ ShuZhiQiHuang employs a sophisticated **dual-pathway training methodology** cons
 
 ### Data Formats
 
-#### 1. Q&A Data Format (tcm_qa.json)
+#### CPT (Continued Pre-training) Data Format
+```json
+[
+  {
+    "text": "The Yellow Emperor's Classic of Internal Medicine states: The three months of spring are called the period of beginning and development. Heaven and earth come to life, and all things flourish. People should retire late and rise early, walk briskly in the courtyard, loosen their hair and relax their bodies to promote the generation of will..."
+  },
+  {
+    "text": "《素问·咳论》：五脏六腑皆令人咳，但关系最密切的是肺胃。手太阴肺经起于中焦，还循胃口，上膈属肺。寒凉饮食入胃，导致中焦寒，寒气循手太阴肺经上入于肺中，导致肺寒，肺为娇脏，不耐寒热..."
+  },
+  {
+    "text": "Traditional Chinese Medicine diagnosis relies on four examination methods: observation (望), listening and smelling (闻), questioning (问), and pulse-taking (切). These comprehensive diagnostic approaches allow practitioners to assess the patient's overall condition and determine appropriate treatment strategies..."
+  }
+]
+```
+
+#### SFT (Supervised Fine-tuning) Data Format
 ```json
 [
   {
     "conversations": [
       {
         "from": "human",
-        "value": "What are the effects and functions of ginseng?"
+        "value": "What are the effects and functions of ginseng in both TCM and Western medicine perspectives?"
       },
       {
         "from": "gpt",
-        "value": "Ginseng has the following main effects:\n1. Tonifying vital energy: Used for qi deficiency and collapse\n2. Restoring pulse and preventing collapse: For heart failure and shock\n3. Nourishing spleen and lungs: Treating spleen-lung qi deficiency\n4. Generating fluids and quenching thirst: For fluid damage and diabetes\n5. Calming spirit and enhancing intelligence: Improving insomnia and forgetfulness..."
+        "value": "From a TCM perspective, ginseng has the following main effects:\n1. Tonifying vital energy: Used for qi deficiency and collapse\n2. Restoring pulse and preventing collapse: For heart failure and shock\n3. Nourishing spleen and lungs: Treating spleen-lung qi deficiency\n\nFrom a Western medicine perspective, ginseng contains active compounds like ginsenosides that have been shown to:\n1. Enhance cognitive function and reduce fatigue\n2. Support immune system function\n3. Help regulate blood sugar levels\n4. Provide adaptogenic stress-relief properties..."
       }
     ]
-  }
-]
-```
-
-#### 2. Medical Instruction Format (medical_instruction.json)
-```json
-[
+  },
   {
-    "instruction": "Please analyze the possible causes of the following symptoms",
-    "input": "Patient complaint: headache, fever, chills, no sweating, floating-tight pulse",
-    "output": "Based on symptom analysis, the patient may have wind-cold exterior syndrome:\n1. Headache and chills indicate external pathogen invasion\n2. Fever without sweating suggests wind-cold binding the exterior\n3. Floating-tight pulse is typical of wind-cold exterior pattern\nRecommend using Mahuang Decoction or Jingfang Baidu Powder for treatment..."
-  }
-]
-```
-
-#### 3. Medical Corpus Format (medical_textbook.json)
-```json
-[
-  {
-    "text": "The Yellow Emperor's Classic of Internal Medicine states: The three months of spring are called the period of beginning and development. Heaven and earth come to life, and all things flourish. People should retire late and rise early, walk briskly in the courtyard, loosen their hair and relax their bodies to promote the generation of will..."
+    "instruction": "Please analyze the following TCM case and provide integrated treatment recommendations",
+    "input": "Patient complaint: chronic fatigue, digestive issues, pale complexion, weak pulse. Western tests show low hemoglobin and vitamin B12 deficiency.",
+    "output": "Integrated Analysis:\n\nTCM Perspective: This presents as spleen qi deficiency with blood deficiency pattern. The pale complexion and weak pulse indicate insufficient qi and blood generation.\n\nWestern Medicine: Laboratory findings confirm anemia and B12 deficiency, which align with the TCM diagnosis.\n\nIntegrated Treatment Approach:\n1. TCM: Use Sijunzi Tang (Four Gentlemen Decoction) to strengthen spleen qi\n2. Western: B12 supplementation and iron therapy as indicated\n3. Dietary therapy: Incorporate both TCM food therapy and Western nutritional guidance\n4. Lifestyle: Combine TCM lifestyle principles with modern evidence-based recommendations..."
   }
 ]
 ```
@@ -185,7 +185,7 @@ Our comprehensive evaluation demonstrates ShuZhiQiHuang's exceptional performanc
 
 🚀 **Breakthrough Against ChatGPT-4**: Our model demonstrates a **37% improvement** over ChatGPT-4 on the A1 metric (82 vs 60), establishing new benchmarks for medical AI performance.
 
-📈 **Dominance Over Specialized TCM Models**: ShuZhiQiHuang surpasses dedicated TCM models like HuatuoGPT and Bianque by substantial margins, showcasing the effectiveness of our dual-pathway integration approach.
+📈 **Dominance Over Specialized TCM Models**: ShuZhiQiHuang surpasses dedicated TCM models like HuatuoGPT and Bianque by substantial margins, showcasing the effectiveness of our two-stage integration approach.
 
 🎯 **Consistent Excellence**: Unlike other models that show uneven performance across different metrics, ShuZhiQiHuang maintains consistently high scores across all evaluation categories, demonstrating robust and reliable medical knowledge integration.
 

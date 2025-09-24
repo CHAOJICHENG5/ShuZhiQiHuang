@@ -345,9 +345,7 @@ Without these foundational works and the dedication of medical professionals and
 
 
 ## Contact
-
-We are from East China Normal University, Shanghai University of Traditional Chinese Medicine, and collaborating research institutions.
-
+**Innovation Center for AI and Drug Discovery, East China Normal University**
 Our intelligent medical platform supports multiple access channels including web portal, mobile applications, and WeChat official accounts, providing comprehensive medical consultation services across different scenarios:
 
 <div align=center>

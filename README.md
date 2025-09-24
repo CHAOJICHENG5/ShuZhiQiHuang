@@ -212,15 +212,6 @@ The evaluation dataset is based on the Traditional Chinese Medicine Licensing Ex
 
 The TCMBench evaluation framework ensures reliable and reproducible assessment of TCM knowledge integration capabilities across different language models.
 
-### Expert Evaluation Results
-
-Professional evaluation by licensed TCM practitioners and Western medicine doctors:
-
-- **Clinical Relevance**: 89.2% of responses rated as clinically relevant
-- **Safety Assessment**: 94.7% of recommendations considered safe
-- **Integration Quality**: 86.8% effectiveness in combining TCM and Western approaches
-- **Professional Accuracy**: 88.5% accuracy in medical terminology and concepts
-
 ## ⚒️ Fine-tuning Framework
 
 ### Overview

@@ -143,9 +143,9 @@ Experience ShuZhi QiHuang's integrated medical consultation capabilities through
 ### Knowledge-based Q&A System
 Our intelligent Q&A system provides comprehensive medical consultations by integrating both TCM and Western medicine knowledge:
 
-<div align=center>
-<img src="img/知识问答.gif" width = "700" alt="Knowledge Q&A Demo" align=center/>
-</div>
+<p align="center">
+  <img src="img/知识问答.gif" width="700" alt="Knowledge Q&A Demo"/>
+</p>
 
 ### Intelligent Tool Integration
 The platform seamlessly integrates various medical tools and resources to enhance consultation effectiveness:

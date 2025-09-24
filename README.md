@@ -8,7 +8,7 @@
 
 ## ⚡ Introduction
 
-**ShuZhi QiHuang (数智岐黄)** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
+**ShuZhi QiHuang (数智岐黄)** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
 ### Key Innovations
 
@@ -30,6 +30,14 @@
 
 <div align=center>
 <img src="img/示意图.png" width = "640" alt="ShuZhi QiHuang Architecture" align=center/>
+</div>
+
+### Platform Showcase
+
+Our intelligent medical platform supports multiple access channels including web portal, mobile applications, and WeChat official accounts, providing comprehensive medical consultation services across different scenarios:
+
+<div align=center>
+<img src="img/宣传图.png" width = "800" alt="ShuZhi QiHuang Platform Showcase" align=center/>
 </div>
 
 ## 💭 Motivation
@@ -130,12 +138,27 @@ python run_web_app.py --all-webui
 
 ## 🚀 Demo
 
-Experience ShuZhi QiHuang's integrated medical consultation capabilities:
+Experience ShuZhi QiHuang's integrated medical consultation capabilities through our interactive demonstrations:
+
+### Knowledge-based Q&A System
+Our intelligent Q&A system provides comprehensive medical consultations by integrating both TCM and Western medicine knowledge:
+
+<div align=center>
+<img src="img/知识问答.gif" width = "700" alt="Knowledge Q&A Demo" align=center/>
+</div>
+
+### Intelligent Tool Integration
+The platform seamlessly integrates various medical tools and resources to enhance consultation effectiveness:
+
+<div align=center>
+<img src="img/工具调用.gif" width = "700" alt="Tool Integration Demo" align=center/>
+</div>
 
 **Key Features:**
 - **Dual Medical System Integration**: Provides both TCM and Western medicine perspectives
 - **Professional Medical Consultation**: Specialized responses for medical inquiries
 - **Knowledge Base Q&A**: RAG-enhanced responses using comprehensive medical knowledge
+- **Intelligent Tool Calling**: Seamless integration with medical databases and diagnostic tools
 - **Multi-modal Support**: Text-based medical consultation with image support (coming soon)
 
 ## 🧐 Evaluations
@@ -150,23 +173,21 @@ We conducted extensive evaluations comparing ShuZhi QiHuang with other medical A
 
 ### Benchmark Performance
 
-Comprehensive evaluation results on TCMBench and medical evaluation datasets demonstrate ShuZhi QiHuang's superior performance across multiple metrics:
+Our comprehensive evaluation demonstrates ShuZhi QiHuang's exceptional performance across multiple medical AI benchmarks:
 
-| Model | A1 | A3/4 | B1 |
-|-------|----|----- |----|
-| **Zhongjing** | 19 | 12 | 13 |
-| **BenTsao** | 23 | 15 | 14 |
-| **HuatuoGPT** | 48 | 49 | 22 |
-| **Bianque** | 21 | 14 | 13 |
-| **ShuZhi QiHuang** | **82** | **67** | **63** |
-| **ChatGPT-3.5-turbo** | 44 | 47 | 44 |
-| **ChatGPT-4** | 60 | 62 | 60 |
+<div align=center>
+<img src="img/指标柱状图.png" width = "800" alt="Performance Comparison Chart" align=center/>
+</div>
 
-**Key Findings:**
-- ShuZhi QiHuang achieves **82** on A1 metric, significantly outperforming ChatGPT-4 (60) and other specialized TCM models
-- Demonstrates consistent superiority across all evaluation categories (A1, A3/4, B1)
-- Shows remarkable improvement over existing TCM-focused models like HuatuoGPT and Bianque
-- Establishes new state-of-the-art performance in integrated TCM-Western medicine evaluation
+**Performance Highlights:**
+
+🏆 **Superior Overall Performance**: ShuZhi QiHuang significantly outperforms all competing models across key evaluation metrics, achieving scores of **82** (A1), **67** (A3/4), and **63** (B1).
+
+🚀 **Breakthrough Against ChatGPT-4**: Our model demonstrates a **37% improvement** over ChatGPT-4 on the A1 metric (82 vs 60), establishing new benchmarks for medical AI performance.
+
+📈 **Dominance Over Specialized TCM Models**: ShuZhi QiHuang surpasses dedicated TCM models like HuatuoGPT and Bianque by substantial margins, showcasing the effectiveness of our dual-pathway integration approach.
+
+🎯 **Consistent Excellence**: Unlike other models that show uneven performance across different metrics, ShuZhi QiHuang maintains consistently high scores across all evaluation categories, demonstrating robust and reliable medical knowledge integration.
 
 ### Expert Evaluation Results
 
@@ -324,8 +345,7 @@ We acknowledge the inspiration and foundation provided by the following works:
 
 - **HuatuoGPT**: Pioneering work in Chinese medical AI systems
 - **LLaMA-Factory**: Efficient fine-tuning framework for large language models
-- **Qwen2**: Advanced language model architecture
-- **Baichuan2**: High-performance Chinese language model
+- **Qwen**: Advanced language model architecture
 - **Traditional Chinese Medicine Classics**: Huangdi Neijing, Shanghan Lun, and other foundational TCM texts
 - **Modern Medical Literature**: Contemporary medical research and clinical guidelines
 

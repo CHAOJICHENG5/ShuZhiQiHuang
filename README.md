@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![GitHub stars](https://img.shields.io/github/stars/CHAOJICHENG5/shuzhiqihuang-web.svg?style=social&label=Star)](https://github.com/CHAOJICHENG5/shuzhiqihuang-web)
+[![GitHub stars](https://img.shields.io/github/stars/CHAOJICHENG5/ShuZhiQiHuang.svg?style=social&label=Star)](https://github.com/CHAOJICHENG5/ShuZhiQiHuang)
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 
 </div>
@@ -121,8 +121,8 @@ ShuZhiQiHuang employs a sophisticated **two-stage training methodology** consist
 #### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/CHAOJICHENG5/shuzhiqihuang-web.git
-cd shuzhiqihuang-web
+git clone https://github.com/CHAOJICHENG5/ShuZhiQiHuang.git
+cd ShuZhiQiHuang
 
 # Install dependencies
 pip install -r requirements.txt
@@ -304,11 +304,11 @@ Our intelligent medical platform supports multiple access channels including web
 
 ## Star History
 
-<a href="https://star-history.com/#CHAOJICHENG5/shuzhiqihuang-web&Date">
+<a href="https://star-history.com/#CHAOJICHENG5/ShuZhiQiHuang&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&theme=dark&avatar=false" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&avatar=false" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&avatar=false" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/ShuZhiQiHuang&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/ShuZhiQiHuang&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CHAOJICHENG5/ShuZhiQiHuang&type=Date" />
   </picture>
 </a>
 

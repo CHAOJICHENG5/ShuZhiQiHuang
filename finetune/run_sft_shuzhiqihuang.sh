@@ -8,7 +8,7 @@ export WANDB_MODE=offline
 # 配置参数
 BASE_MODEL_PATH="/path/to/base/model"  # 基础模型路径，如Qwen2.5-14B
 OUTPUT_DIR="./outputs/shuzhiqihuang-sft-$(date +%Y%m%d-%H%M%S)"
-DATA_DIR="./data"
+DATA_DIR="./data/sft"
 CACHE_DIR="./cache"
 
 # 训练参数

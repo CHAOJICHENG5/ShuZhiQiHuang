@@ -13,21 +13,15 @@
 - [01/19/2024]: 🌟 **ShuZhiQiHuang 1.0** officially released - the first comprehensive TCM-Western medicine integrated AI platform!
 
 ## ⚡ Introduction
-
-**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, collaboratively released by **East China Normal University in conjunction with Shanghai University of Traditional Chinese Medicine and other contributing institutions**. Our model employs a two-stage approach that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
+**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, collaboratively released by **East China Normal University, Shanghai University of Traditional Chinese Medicine, East China University of Science & Technology, Jiangzhong Pharmaceutical Co., Ltd., and Second Military Medical University**. Our model employs a two-stage approach that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
 ### Key Innovations
-
 🔬 **two-stage Training Methodology**: Integrates biomedical corpora with classical TCM texts through a  two-stage training process
-
 📊 **Superior Performance**: Achieves remarkable improvements on TCMBench evaluations, significantly outperforming ChatGPT-4 and existing TCM-focused models
-
 🧠 **Knowledge Graph Fusion**: Incorporates structured medical knowledge graphs to enhance reasoning capabilities across both medical paradigms
-
 🏥 **Platform-based Applications**: Features RAG-enhanced Q&A systems and educational tools designed for clinical training and knowledge preservation
 
 ### What We Provide
-
 1. **Intelligent Medical Platform**: Comprehensive system for integrated TCM-Western medicine consultation
 2. **RAG-Enhanced Q&A System**: Advanced retrieval-augmented generation for accurate medical responses  
 3. **Educational & Training Tools**: Specialized resources for medical education and TCM knowledge inheritance
@@ -39,7 +33,6 @@
 </div>
 
 ## 💭 Motivation
-
 - **Bridging East and West**: To create an AI system that can effectively integrate Traditional Chinese Medicine wisdom with modern Western medical knowledge, providing comprehensive healthcare solutions.
 - **Professional Medical AI**: To develop a specialized medical AI that understands the nuances of both medical systems and can provide contextually appropriate recommendations.
 - **Accessible Healthcare**: To democratize access to integrated medical knowledge, making both TCM and Western medicine expertise available to broader populations.
@@ -48,7 +41,6 @@
 ## 📚 Two-stage Training Data
 
 ### Overview
-
 ShuZhiQiHuang employs a sophisticated **two-stage training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
 
 ### CPT (Continued Pre-training)

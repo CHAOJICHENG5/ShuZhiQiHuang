@@ -142,21 +142,21 @@ Experience ShuZhiQiHuang's integrated medical consultation capabilities through 
 Our intelligent Q&A system provides comprehensive medical consultations by integrating both TCM and Western medicine knowledge:
 
 <p align="center">
-  <img src="img/知识问答.gif" width="700" alt="Knowledge Q&A Demo"/>
+  <img src="img/知识问答.gif" width="800" alt="Knowledge Q&A Demo"/>
 </p>
 
 ### Intelligent Tool Integration
 The platform seamlessly integrates various medical tools and resources to enhance consultation effectiveness:
 
 <div align=center>
-<img src="img/工具调用.gif" width = "700" alt="Tool Integration Demo" align=center/>
+<img src="img/工具调用.gif" width = "800" alt="Tool Integration Demo" align=center/>
 </div>
 
 ### Advanced Reasoning Mode
 ShuZhiQiHuang features an advanced reasoning mode that provides step-by-step medical analysis and decision-making processes:
 
 <div align=center>
-<img src="img/推理模式.gif" width = "700" alt="Advanced Reasoning Mode Demo" align=center/>
+<img src="img/推理模式.gif" width = "800" alt="Advanced Reasoning Mode Demo" align=center/>
 </div>
 
 **Key Features:**

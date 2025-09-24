@@ -1,14 +1,14 @@
-# ShuZhi QiHuang (数智岐黄): A Dual-pathway Large Language Model for Integrating Traditional Chinese Medicine and Western Medicine
+# ShuZhiQiHuang: A Knowledge Graph-Driven Platform for Integrating Traditional Chinese and Modern Medicine
 
 ## ✨ Latest News
-- [12/2024]: 🎉🎉🎉 Released **ShuZhi QiHuang** integrated TCM-Western Medicine intelligent platform with comprehensive evaluation results!
+- [12/2024]: 🎉🎉🎉 Released **ShuZhiQiHuang** integrated TCM-Western Medicine intelligent platform with comprehensive evaluation results!
 - [11/2024]: Achieved significant performance improvements on TCMBench, surpassing ChatGPT-4 and mainstream TCM models.
 - [10/2024]: Launched dual-pathway training approach combining biomedical and TCM classical corpora with knowledge graph fusion.
 - [09/2024]: Released RAG-enhanced Q&A system and educational tools for TCM knowledge inheritance.
 
 ## ⚡ Introduction
 
-**ShuZhi QiHuang (数智岐黄)** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
+**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
 ### Key Innovations
 
@@ -29,15 +29,7 @@
 5. **Benchmark Evaluations**: Rigorous assessment across multiple medical evaluation datasets
 
 <div align=center>
-<img src="img/示意图.png" width = "640" alt="ShuZhi QiHuang Architecture" align=center/>
-</div>
-
-### Platform Showcase
-
-Our intelligent medical platform supports multiple access channels including web portal, mobile applications, and WeChat official accounts, providing comprehensive medical consultation services across different scenarios:
-
-<div align=center>
-<img src="img/宣传图.png" width = "800" alt="ShuZhi QiHuang Platform Showcase" align=center/>
+<img src="img/示意图.png" width = "640" alt="ShuZhiQiHuang Architecture" align=center/>
 </div>
 
 ## 💭 Motivation
@@ -51,7 +43,7 @@ Our intelligent medical platform supports multiple access channels including web
 
 ### Overview
 
-ShuZhi QiHuang employs a sophisticated **dual-pathway training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
+ShuZhiQiHuang employs a sophisticated **dual-pathway training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
 
 ### CPT (Continued Pre-training)
 
@@ -138,7 +130,7 @@ python run_web_app.py --all-webui
 
 ## 🚀 Demo
 
-Experience ShuZhi QiHuang's integrated medical consultation capabilities through our interactive demonstrations:
+Experience ShuZhiQiHuang's integrated medical consultation capabilities through our interactive demonstrations:
 
 ### Knowledge-based Q&A System
 Our intelligent Q&A system provides comprehensive medical consultations by integrating both TCM and Western medicine knowledge:
@@ -165,7 +157,7 @@ The platform seamlessly integrates various medical tools and resources to enhanc
 
 ### Comprehensive Medical Evaluation
 
-We conducted extensive evaluations comparing ShuZhi QiHuang with other medical AI systems across both Traditional Chinese Medicine and Western Medicine domains:
+We conducted extensive evaluations comparing ShuZhiQiHuang with other medical AI systems across both Traditional Chinese Medicine and Western Medicine domains:
 
 <div align=center>
 <img src="img/评估结果.png" alt="Evaluation Results" align=center/>
@@ -173,7 +165,7 @@ We conducted extensive evaluations comparing ShuZhi QiHuang with other medical A
 
 ### Benchmark Performance
 
-Our comprehensive evaluation demonstrates ShuZhi QiHuang's exceptional performance across multiple medical AI benchmarks:
+Our comprehensive evaluation demonstrates ShuZhiQiHuang's exceptional performance across multiple medical AI benchmarks:
 
 <div align=center>
 <img src="img/指标柱状图.png" width = "800" alt="Performance Comparison Chart" align=center/>
@@ -181,13 +173,13 @@ Our comprehensive evaluation demonstrates ShuZhi QiHuang's exceptional performan
 
 **Performance Highlights:**
 
-🏆 **Superior Overall Performance**: ShuZhi QiHuang significantly outperforms all competing models across key evaluation metrics, achieving scores of **82** (A1), **67** (A3/4), and **63** (B1).
+🏆 **Superior Overall Performance**: ShuZhiQiHuang significantly outperforms all competing models across key evaluation metrics, achieving scores of **82** (A1), **67** (A3/4), and **63** (B1).
 
 🚀 **Breakthrough Against ChatGPT-4**: Our model demonstrates a **37% improvement** over ChatGPT-4 on the A1 metric (82 vs 60), establishing new benchmarks for medical AI performance.
 
-📈 **Dominance Over Specialized TCM Models**: ShuZhi QiHuang surpasses dedicated TCM models like HuatuoGPT and Bianque by substantial margins, showcasing the effectiveness of our dual-pathway integration approach.
+📈 **Dominance Over Specialized TCM Models**: ShuZhiQiHuang surpasses dedicated TCM models like HuatuoGPT and Bianque by substantial margins, showcasing the effectiveness of our dual-pathway integration approach.
 
-🎯 **Consistent Excellence**: Unlike other models that show uneven performance across different metrics, ShuZhi QiHuang maintains consistently high scores across all evaluation categories, demonstrating robust and reliable medical knowledge integration.
+🎯 **Consistent Excellence**: Unlike other models that show uneven performance across different metrics, ShuZhiQiHuang maintains consistently high scores across all evaluation categories, demonstrating robust and reliable medical knowledge integration.
 
 ### Expert Evaluation Results
 
@@ -201,10 +193,10 @@ Professional evaluation by licensed TCM practitioners and Western medicine docto
 ## ⚒️ Fine-tuning Framework
 
 ### Overview
-The ShuZhi QiHuang fine-tuning framework is a streamlined system based on LLaMA-Factory, specifically optimized for integrated TCM-Western medicine domain fine-tuning.
+The ShuZhiQiHuang fine-tuning framework is a streamlined system based on LLaMA-Factory, specifically optimized for integrated TCM-Western medicine domain fine-tuning.
 
 ### Features
-- 🎯 **Specialized Design**: Optimized for ShuZhi QiHuang model and integrated medical data
+- 🎯 **Specialized Design**: Optimized for ShuZhiQiHuang model and integrated medical data
 - 🚀 **Simplified Architecture**: Removes redundant features while maintaining core fine-tuning capabilities
 - 📊 **Multiple Fine-tuning Methods**: Supports LoRA, QLoRA, and Full Fine-tuning
 - 🔧 **DeepSpeed Integration**: Supports distributed training for large models
@@ -291,7 +283,7 @@ The `deepspeed_config.json` contains distributed training configurations support
 
 ## 🤖 Limitations
 
-While ShuZhi QiHuang represents a significant advancement in integrated medical AI, several limitations must be acknowledged:
+While ShuZhiQiHuang represents a significant advancement in integrated medical AI, several limitations must be acknowledged:
 
 - **Medical Responsibility**: This system is designed to assist and educate, not replace professional medical diagnosis or treatment. Always consult qualified healthcare providers for medical decisions.
 - **Cultural Context**: While integrating TCM and Western medicine, cultural and individual variations in treatment approaches may not be fully captured.
@@ -316,7 +308,7 @@ While ShuZhi QiHuang represents a significant advancement in integrated medical 
 - **Global Health**: Promoting worldwide adoption of integrated medical approaches
 
 ### Platform Vision
-ShuZhi QiHuang serves as an intelligent platform dedicated to:
+ShuZhiQiHuang serves as an intelligent platform dedicated to:
 - **Driving Scientific Innovation** in integrated medicine research
 - **Enhancing Clinical Training** effectiveness and accessibility  
 - **Preserving Cultural Heritage** of traditional Chinese medicine
@@ -326,7 +318,7 @@ ShuZhi QiHuang serves as an intelligent platform dedicated to:
 ## 📊 Technical Architecture
 
 ### System Components
-1. **ShuZhi QiHuang LLM**: Core language model specialized for medical applications
+1. **ShuZhiQiHuang LLM**: Core language model specialized for medical applications
 2. **RAG System**: Retrieval-Augmented Generation for knowledge-enhanced responses
 3. **Knowledge Base**: Comprehensive medical knowledge covering TCM and Western medicine
 4. **Web Interface**: User-friendly interface for medical consultation
@@ -349,17 +341,18 @@ We acknowledge the inspiration and foundation provided by the following works:
 - **Traditional Chinese Medicine Classics**: Huangdi Neijing, Shanghan Lun, and other foundational TCM texts
 - **Modern Medical Literature**: Contemporary medical research and clinical guidelines
 
-Without these foundational works and the dedication of medical professionals and researchers worldwide, the development of ShuZhi QiHuang would not have been possible.
+Without these foundational works and the dedication of medical professionals and researchers worldwide, the development of ShuZhiQiHuang would not have been possible.
 
 
 ## Contact
 
 We are from East China Normal University, Shanghai University of Traditional Chinese Medicine, and collaborating research institutions.
 
-For questions, suggestions, or collaborations:
-- Email: contact@shuzhiqihuang.com
-- Issues: [GitHub Issues](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/issues)
-- Documentation: [Project Wiki](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/wiki)
+Our intelligent medical platform supports multiple access channels including web portal, mobile applications, and WeChat official accounts, providing comprehensive medical consultation services across different scenarios:
+
+<div align=center>
+<img src="img/宣传图.png" width = "800" alt="ShuZhiQiHuang Platform Showcase" align=center/>
+</div>
 
 ## Star History
 

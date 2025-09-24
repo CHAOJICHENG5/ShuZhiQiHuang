@@ -152,11 +152,19 @@ The platform seamlessly integrates various medical tools and resources to enhanc
 <img src="img/工具调用.gif" width = "700" alt="Tool Integration Demo" align=center/>
 </div>
 
+### Advanced Reasoning Mode
+ShuZhiQiHuang features an advanced reasoning mode that provides step-by-step medical analysis and decision-making processes:
+
+<div align=center>
+<img src="img/推理模式.gif" width = "700" alt="Advanced Reasoning Mode Demo" align=center/>
+</div>
+
 **Key Features:**
 - **Dual Medical System Integration**: Provides both TCM and Western medicine perspectives
 - **Professional Medical Consultation**: Specialized responses for medical inquiries
 - **Knowledge Base Q&A**: RAG-enhanced responses using comprehensive medical knowledge
 - **Intelligent Tool Calling**: Seamless integration with medical databases and diagnostic tools
+- **Advanced Reasoning Mode**: Step-by-step medical analysis with transparent decision-making processes
 - **Multi-modal Support**: Text-based medical consultation with image support (coming soon)
 
 ## 🧐 Evaluations
@@ -191,7 +199,7 @@ Our comprehensive evaluation demonstrates ShuZhiQiHuang's exceptional performanc
 
 ### Evaluation Framework
 
-Our comprehensive evaluation is conducted using the [TCMBench](https://github.com/ywjawmw/TCMBench) framework, the first comprehensive benchmark for evaluating Large Language Models in Traditional Chinese Medicine. TCMBench provides a standardized evaluation protocol that assesses LLM performance across different types of TCM-related questions.
+Our comprehensive evaluation is conducted using the [TCMBench](https://github.com/ywjawmw/TCMBench) framework, the first comprehensive benchmark for evaluating Large Language Models in the interdisciplinary field of Traditional Chinese and Western Medicine. TCMBench provides a standardized evaluation protocol that assesses LLM performance across different types of TCM-related questions.
 
 ### TCMBench Dataset Overview
 

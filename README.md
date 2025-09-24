@@ -22,11 +22,12 @@
 🏥 **Platform-based Applications**: Features RAG-enhanced Q&A systems and educational tools designed for clinical training and knowledge preservation
 
 ### What We Provide
-1. **Intelligent Medical Platform**: Comprehensive system for integrated TCM-Western medicine consultation
-2. **RAG-Enhanced Q&A System**: Advanced retrieval-augmented generation for accurate medical responses  
-3. **Educational & Training Tools**: Specialized resources for medical education and TCM knowledge inheritance
-4. **Fine-tuning Framework**: Complete toolkit for medical domain model development
-5. **Benchmark Evaluations**: Rigorous assessment across multiple medical evaluation datasets
+1. **Intelligent Q&A System**: Comprehensive TCM and Western medicine question-answering capabilities with integrated knowledge reasoning
+2. **Medical Knowledge Graph Visualization**: Interactive hybrid knowledge graph query system for exploring medical relationships and connections
+3. **Syndrome Inference Engine**: Advanced diagnostic inference system combining traditional syndrome differentiation with modern medical analysis
+4. **Herbal Ingredient Information Retrieval**: Comprehensive database and search system for traditional Chinese herbal medicines and their active compounds
+5. **Multi-Platform Access**: Seamless integration across web interface, WeChat mini-programs, and mobile applications for diverse user scenarios
+6. **Local Deployment Support**: Complete offline deployment solution ensuring data privacy and security for medical institutions
 
 <div align=center>
 <img src="img/示意图.png" width = "800" alt="ShuZhiQiHuang Architecture" align=center/>

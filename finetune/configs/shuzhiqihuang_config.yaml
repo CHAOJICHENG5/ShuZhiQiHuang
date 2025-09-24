@@ -1,0 +1,84 @@
+# 数智岐黄模型微调配置文件
+
+# 模型配置
+model:
+  name: "shuzhiqihuang"
+  base_model_path: "/path/to/base/model"  # 基础模型路径
+  template: "qwen"  # 对话模板
+  
+# 数据配置
+data:
+  dataset_dir: "./data"
+  datasets:
+    sft: ["tcm_qa", "medical_instruction"]  # SFT数据集
+    pt: ["tcm_corpus", "medical_textbook", "clinical_notes"]  # 预训练数据集
+  max_seq_length: 8912
+  preprocessing_num_workers: 16
+
+# 训练配置
+training:
+  # 微调类型: lora, qlora, full
+  finetuning_type: "lora"
+  
+  # LoRA参数
+  lora:
+    rank: 64
+    alpha: 128
+    dropout: 0.05
+    target_modules: ["q_proj", "v_proj", "k_proj", "o_proj", "gate_proj", "up_proj", "down_proj"]
+  
+  # 训练参数
+  per_device_train_batch_size: 4
+  per_device_eval_batch_size: 4
+  gradient_accumulation_steps: 8
+  learning_rate: 5.0e-5
+  num_train_epochs: 3
+  max_steps: -1
+  lr_scheduler_type: "cosine"
+  warmup_steps: 100
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  
+  # 保存和日志
+  output_dir: "./outputs/shuzhiqihuang-finetune"
+  logging_steps: 10
+  save_steps: 500
+  eval_steps: 500
+  evaluation_strategy: "steps"
+  save_total_limit: 3
+  
+  # 优化器配置
+  optim: "adamw_torch"
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-8
+
+# DeepSpeed配置
+deepspeed:
+  config_file: "deepspeed_config.json"
+  zero_stage: 2
+  bf16: true
+  gradient_checkpointing: true
+
+# 硬件配置
+hardware:
+  bf16: true
+  fp16: false
+  gradient_checkpointing: true
+  dataloader_num_workers: 4
+  remove_unused_columns: false
+  
+# 监控配置
+monitoring:
+  report_to: "none"  # 可选: wandb, tensorboard
+  run_name: "shuzhiqihuang-finetune"
+  plot_loss: true
+  
+# 医药专用配置
+medical:
+  # 医学术语词典
+  medical_vocab: "./configs/medical_vocab.txt"
+  # 医药实体识别
+  tcm_entities: "./configs/tcm_entities.json"
+  # 质量控制
+  quality_check: true

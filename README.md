@@ -319,9 +319,9 @@ Our intelligent medical platform supports multiple access channels including web
 
 <a href="https://star-history.com/#CHAOJICHENG5/shuzhiqihuang-web&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&theme=dark&avatar=false" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&avatar=false" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&avatar=false" />
   </picture>
 </a>
 

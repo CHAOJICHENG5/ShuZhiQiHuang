@@ -14,7 +14,7 @@
 
 ## ⚡ Introduction
 
-**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, developed by the **Innovation Center for AI and Drug Discovery, East China Normal University**.Our model employs a **two-stage** approach that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
+**ShuZhiQiHuang** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications, collaboratively released by **East China Normal University in conjunction with Shanghai University of Traditional Chinese Medicine and other contributing institutions**. Our model employs a two-stage approach that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
 ### Key Innovations
 
@@ -35,7 +35,7 @@
 5. **Benchmark Evaluations**: Rigorous assessment across multiple medical evaluation datasets
 
 <div align=center>
-<img src="img/示意图.png" width = "640" alt="ShuZhiQiHuang Architecture" align=center/>
+<img src="img/示意图.png" width = "800" alt="ShuZhiQiHuang Architecture" align=center/>
 </div>
 
 ## 💭 Motivation

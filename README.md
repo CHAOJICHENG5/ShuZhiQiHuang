@@ -1,22 +1,32 @@
-# ShuZhi QiHuang (数智岐黄), Towards Integrating Traditional Chinese Medicine and Western Medicine with AI
+# ShuZhi QiHuang (数智岐黄): A Dual-pathway Large Language Model for Integrating Traditional Chinese Medicine and Western Medicine
 
 ## ✨ Latest News
-- [12/2024]: 🎉🎉🎉 Released **ShuZhi QiHuang** integrated TCM-Western Medicine Q&A platform with fine-tuning framework!
-- [11/2024]: Launched comprehensive medical knowledge base covering both Traditional Chinese Medicine and Western Medicine.
-- [10/2024]: Released ShuZhi QiHuang Large Language Model specialized for integrated East-West medical consultation.
-- [09/2024]: Completed fine-tuning with massive TCM and Western Medicine professional corpora and instruction data.
+- [12/2024]: 🎉🎉🎉 Released **ShuZhi QiHuang** integrated TCM-Western Medicine intelligent platform with comprehensive evaluation results!
+- [11/2024]: Achieved significant performance improvements on TCMBench, surpassing ChatGPT-4 and mainstream TCM models.
+- [10/2024]: Launched dual-pathway training approach combining biomedical and TCM classical corpora with knowledge graph fusion.
+- [09/2024]: Released RAG-enhanced Q&A system and educational tools for TCM knowledge inheritance.
 
 ## ⚡ Introduction
 
-Welcome to the repository of **ShuZhi QiHuang (数智岐黄)**, a large language model (LLM) specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications. Our objective with ShuZhi QiHuang is to construct a comprehensive medical AI assistant that bridges the gap between Eastern and Western medical practices, providing professional medical consultation services that leverage the strengths of both medical systems.
+**ShuZhi QiHuang (数智岐黄)** is a pioneering large language model specifically designed for **integrated Traditional Chinese Medicine (TCM) and Western Medicine** applications. Our model employs a novel **dual-pathway approach** that combines biomedical knowledge with TCM classical literature through advanced fine-tuning and knowledge graph fusion techniques.
 
-Here is a list of what has been released:
+### Key Innovations
 
-1. **ShuZhi QiHuang Model**: A specialized large language model fine-tuned on massive TCM and Western Medicine corpora
-2. **Integrated Medical Knowledge Base**: Comprehensive knowledge base covering both traditional and modern medical knowledge
-3. **Fine-tuning Framework**: Streamlined framework for medical domain model fine-tuning based on LLaMA-Factory
-4. **RAG System**: Advanced Retrieval-Augmented Generation system for accurate medical consultation
-5. **Evaluation Benchmarks**: Comprehensive evaluation methods for medical AI performance assessment
+🔬 **Dual-pathway Training Methodology**: Integrates biomedical corpora with classical TCM texts through a sophisticated two-stage training process (CPT + SFT)
+
+📊 **Superior Performance**: Achieves remarkable improvements on TCMBench evaluations, significantly outperforming ChatGPT-4 and existing TCM-focused models
+
+🧠 **Knowledge Graph Fusion**: Incorporates structured medical knowledge graphs to enhance reasoning capabilities across both medical paradigms
+
+🏥 **Platform-based Applications**: Features RAG-enhanced Q&A systems and educational tools designed for clinical training and knowledge preservation
+
+### What We Provide
+
+1. **Intelligent Medical Platform**: Comprehensive system for integrated TCM-Western medicine consultation
+2. **RAG-Enhanced Q&A System**: Advanced retrieval-augmented generation for accurate medical responses  
+3. **Educational & Training Tools**: Specialized resources for medical education and TCM knowledge inheritance
+4. **Fine-tuning Framework**: Complete toolkit for medical domain model development
+5. **Benchmark Evaluations**: Rigorous assessment across multiple medical evaluation datasets
 
 <div align=center>
 <img src="img/示意图.png" width = "640" alt="ShuZhi QiHuang Architecture" align=center/>
@@ -29,19 +39,35 @@ Here is a list of what has been released:
 - **Accessible Healthcare**: To democratize access to integrated medical knowledge, making both TCM and Western medicine expertise available to broader populations.
 - **Research Advancement**: To provide open-source tools and datasets for advancing research in medical AI and integrated healthcare systems.
 
-## 📚 Data
+## 📚 Two-stage Training Data
 
 ### Overview
 
-To leverage the best of both Traditional Chinese Medicine and Western Medicine knowledge, we fine-tune **ShuZhi QiHuang** using five comprehensive types of medical data:
+ShuZhi QiHuang employs a sophisticated **dual-pathway training methodology** consisting of Continued Pre-training (CPT) and Supervised Fine-tuning (SFT). This approach systematically integrates biomedical knowledge with traditional Chinese medicine wisdom through carefully curated datasets.
 
-| Type | Scale | Descriptions | Examples |
-|------|-------|-------------|----------|
-| **TCM Q&A Data** | 85,000+ | Traditional Chinese Medicine question-answer pairs covering diagnostics, treatments, and herbal medicine | 💬: What are the effects and functions of ginseng?<br>👨‍⚕️: Ginseng has the following main effects:<br>1. **Tonifying vital energy**: Used for qi deficiency and collapse<br>2. **Restoring pulse and preventing collapse**: For heart failure and shock<br>3. **Nourishing spleen and lungs**: Treating spleen-lung qi deficiency<br>4. **Generating fluids and quenching thirst**: For fluid damage and diabetes<br>5. **Calming spirit and enhancing intelligence**: Improving insomnia and forgetfulness... |
-| **Western Medicine Instructions** | 92,000+ | Modern medical instruction data including disease diagnosis, treatment protocols, and pharmaceutical guidance | 💬: Please analyze the possible causes of the following symptoms<br>👨‍⚕️: Based on the symptoms of headache, fever, chills, no sweating, and floating-tight pulse, the patient may have wind-cold exterior syndrome:<br>1. Headache and chills indicate external pathogen invasion<br>2. Fever without sweating suggests wind-cold binding the exterior<br>3. Floating-tight pulse is typical of wind-cold exterior pattern<br>Recommend using Mahuang Decoction or Jingfang Baidu Powder for treatment... |
-| **Integrated Medical Conversations** | 76,500+ | Multi-turn conversations integrating both TCM and Western medicine perspectives for comprehensive patient care | 💬: I have been experiencing chronic fatigue and digestive issues. Can you provide both TCM and Western medicine perspectives?<br>👨‍⚕️: From a **Western medicine** perspective, chronic fatigue with digestive issues could indicate conditions like IBS, chronic fatigue syndrome, or autoimmune disorders. Recommended tests include complete blood count, thyroid function, and inflammatory markers.<br><br>From a **TCM** perspective, this suggests spleen qi deficiency with possible dampness accumulation. The spleen governs transformation and transportation of nutrients. Treatment would focus on strengthening spleen qi using formulas like Sijunzi Tang...<br>💬: How can both approaches be integrated?<br>👨‍⚕️: An integrated approach would combine Western diagnostic testing to rule out serious conditions while using TCM therapies to address the underlying constitutional imbalance. This might include dietary therapy, herbal medicine, and acupuncture alongside appropriate Western treatments... |
-| **Medical Literature Corpus** | 150,000+ | Comprehensive medical texts from both traditional Chinese medical classics and modern medical literature | Classical texts from Huangdi Neijing, Shanghan Lun, modern medical textbooks, clinical guidelines, and research papers covering integrated medical approaches |
-| **Clinical Case Studies** | 45,000+ | Real-world clinical cases demonstrating integrated TCM-Western medicine treatment approaches | Anonymized clinical cases showing successful integration of both medical systems in treating various conditions |
+### CPT (Continued Pre-training)
+
+| Dataset | Size | Description |
+|---------|------|-------------|
+| **TCM Books** | 394MB | Classical Chinese medicine texts and historical medical literature |
+| **TCM Textbook** | 394MB | Modern TCM educational materials and standardized textbooks |
+| **ChatMed Q&A** | 385MB | Medical question-answer pairs covering general medical knowledge |
+| **Medical Wikidoc** | 10MB | Structured medical reference documentation |
+| **CMtMedQA Q&A** | 151MB | Chinese medical question-answer corpus |
+| **TCM Dialogue Data** | 564MB | Conversational data from TCM clinical consultations |
+| **General Data** | 3.0GB | Comprehensive biomedical and general domain corpora |
+
+### SFT (Supervised Fine-tuning)
+
+| Dataset | Size | Description |
+|---------|------|-------------|
+| **Drug-Des Q&A** | 13.8k | Drug design and pharmaceutical question-answer pairs |
+| **Bio-QA Q&A** | 2.4k | Biological sciences question-answer corpus |
+| **MedicationQA Q&A** | 1.9k | Medication-related queries and responses |
+| **MedQA Q&A** | 34k | Medical examination and clinical question-answer pairs |
+| **TCM-QA Q&A** | 42k | Traditional Chinese Medicine specialized Q&A dataset |
+
+**Note**: CPT and SFT represent Continued Pre-training and Supervised Fine-tuning respectively. 'Q&A' indicates question-answer pairs. CPT dataset sizes are given as file volumes (MB/GB), while SFT dataset sizes represent the number of question-answer pairs (k = thousands).
 
 ### Data Formats
 
@@ -83,23 +109,13 @@ To leverage the best of both Traditional Chinese Medicine and Western Medicine k
 ]
 ```
 
-### Download
-- [ShuZhi-QiHuang-sft-data-v1](https://huggingface.co/datasets/ShuZhiQiHuang/sft-data-v1): The comprehensive dataset used in the Supervised Fine-Tuning (SFT) stage of ShuZhi QiHuang.
-
-## 👨‍⚕️ Model
-
-### Model Access
-| Model | Backbone | Specialization | Link |
-|-------|----------|---------------|------|
-| ShuZhi-QiHuang-7B | Qwen2-7B | Integrated TCM-Western Medicine | [Model Weights](https://huggingface.co/ShuZhiQiHuang/ShuZhi-QiHuang-7B) |
-| ShuZhi-QiHuang-13B | Baichuan2-13B | Advanced Medical Consultation | [Model Weights](https://huggingface.co/ShuZhiQiHuang/ShuZhi-QiHuang-13B) |
 
 ### Deploy
 
 #### Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/shuzhiqihuang-web.git
+git clone https://github.com/CHAOJICHENG5/shuzhiqihuang-web.git
 cd shuzhiqihuang-web
 
 # Install dependencies
@@ -110,13 +126,6 @@ python init_database.py
 
 # Start the web application
 python run_web_app.py --all-webui
-```
-
-#### Docker Deployment
-```bash
-# Build and run with Docker
-docker build -t shuzhiqihuang:latest .
-docker run -p 8501:8501 -p 7861:7861 shuzhiqihuang:latest
 ```
 
 ## 🚀 Demo
@@ -141,13 +150,23 @@ We conducted extensive evaluations comparing ShuZhi QiHuang with other medical A
 
 ### Benchmark Performance
 
-| Dataset | Model | BLEU-1 | BLEU-4 | ROUGE-L | Medical Accuracy | TCM Knowledge | Western Med Knowledge |
-|---------|-------|---------|---------|----------|-----------------|---------------|---------------------|
-| **Chinese Medical QA** | GPT-3.5 | 23.45 | 4.12 | 18.67 | 72.3% | 65.8% | 78.9% |
-| | ChatGLM-Med | 25.67 | 5.34 | 20.12 | 74.6% | 69.2% | 79.8% |
-| | **ShuZhi QiHuang** | **28.92** | **6.78** | **22.45** | **81.4%** | **85.6%** | **83.2%** |
-| **Integrated Med Eval** | GPT-4 | 26.78 | 5.89 | 21.34 | 78.9% | 72.1% | 85.6% |
-| | **ShuZhi QiHuang** | **29.45** | **7.23** | **23.67** | **83.7%** | **87.3%** | **84.9%** |
+Comprehensive evaluation results on TCMBench and medical evaluation datasets demonstrate ShuZhi QiHuang's superior performance across multiple metrics:
+
+| Model | A1 | A3/4 | B1 |
+|-------|----|----- |----|
+| **Zhongjing** | 19 | 12 | 13 |
+| **BenTsao** | 23 | 15 | 14 |
+| **HuatuoGPT** | 48 | 49 | 22 |
+| **Bianque** | 21 | 14 | 13 |
+| **ShuZhi QiHuang** | **82** | **67** | **63** |
+| **ChatGPT-3.5-turbo** | 44 | 47 | 44 |
+| **ChatGPT-4** | 60 | 62 | 60 |
+
+**Key Findings:**
+- ShuZhi QiHuang achieves **82** on A1 metric, significantly outperforming ChatGPT-4 (60) and other specialized TCM models
+- Demonstrates consistent superiority across all evaluation categories (A1, A3/4, B1)
+- Shows remarkable improvement over existing TCM-focused models like HuatuoGPT and Bianque
+- Establishes new state-of-the-art performance in integrated TCM-Western medicine evaluation
 
 ### Expert Evaluation Results
 
@@ -259,21 +278,29 @@ While ShuZhi QiHuang represents a significant advancement in integrated medical 
 - **Continuous Learning**: Medical knowledge evolves rapidly; the model requires regular updates to maintain current medical standards.
 - **Bias Considerations**: Despite extensive training, potential biases from training data or cultural perspectives may influence outputs.
 
-## 🏥 Use Cases
+## 🏥 Platform Applications & Impact
 
 ### Primary Applications
-1. **Medical Education**: Training medical students in integrated East-West medicine approaches
-2. **Clinical Decision Support**: Assisting healthcare providers with comprehensive treatment perspectives
-3. **Patient Education**: Providing patients with understandable explanations of both TCM and Western medicine approaches
-4. **Research Support**: Facilitating research in integrated medicine and cross-cultural medical practices
-5. **Telemedicine**: Enhancing remote consultation capabilities with comprehensive medical knowledge
+1. **Scientific Research Advancement**: Accelerating research in integrated medicine through AI-powered analysis and knowledge discovery
+2. **Clinical Training & Education**: Comprehensive training platform for medical professionals in TCM-Western medicine integration
+3. **Knowledge Preservation & Inheritance**: Digitizing and preserving traditional Chinese medical knowledge for future generations
+4. **Intelligent Clinical Support**: Providing evidence-based recommendations combining both medical paradigms
+5. **Cross-cultural Medical Bridge**: Facilitating communication and understanding between Eastern and Western medical practices
 
-### Target Users
-- Medical students and educators
-- Healthcare professionals interested in integrated medicine
-- Researchers in medical AI and integrated healthcare
-- Healthcare institutions seeking comprehensive medical AI solutions
-- Patients seeking educational information about integrated medical approaches
+### Target Impact Areas
+- **Research Institutions**: Advancing integrated medicine research with AI-powered tools
+- **Medical Schools**: Enhanced curriculum delivery for integrated medicine education
+- **Healthcare Systems**: Improved patient care through comprehensive medical perspectives
+- **TCM Practitioners**: Modern tools for traditional knowledge application
+- **Global Health**: Promoting worldwide adoption of integrated medical approaches
+
+### Platform Vision
+ShuZhi QiHuang serves as an intelligent platform dedicated to:
+- **Driving Scientific Innovation** in integrated medicine research
+- **Enhancing Clinical Training** effectiveness and accessibility  
+- **Preserving Cultural Heritage** of traditional Chinese medicine
+- **Promoting Integration** between Eastern and Western medical systems
+- **Advancing Global Health** through comprehensive medical AI solutions
 
 ## 📊 Technical Architecture
 
@@ -311,16 +338,16 @@ We are from East China Normal University, Shanghai University of Traditional Chi
 
 For questions, suggestions, or collaborations:
 - Email: contact@shuzhiqihuang.com
-- Issues: [GitHub Issues](https://github.com/your-org/shuzhiqihuang-web/issues)
-- Documentation: [Project Wiki](https://github.com/your-org/shuzhiqihuang-web/wiki)
+- Issues: [GitHub Issues](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/issues)
+- Documentation: [Project Wiki](https://github.com/CHAOJICHENG5/shuzhiqihuang-web/wiki)
 
 ## Star History
 
-<a href="https://star-history.com/#your-org/shuzhiqihuang-web&Date">
+<a href="https://star-history.com/#CHAOJICHENG5/shuzhiqihuang-web&Date">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=your-org/shuzhiqihuang-web&type=Date&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=your-org/shuzhiqihuang-web&type=Date" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=your-org/shuzhiqihuang-web&type=Date" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=CHAOJICHENG5/shuzhiqihuang-web&type=Date" />
   </picture>
 </a>
 
